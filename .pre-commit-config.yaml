@@ -30,7 +30,7 @@ repos:
                 ]
 
     - repo: https://github.com/PyCQA/autoflake
-      rev: v2.2.1
+      rev: v2.3.1
       hooks:
           - id: autoflake
             # 移除未使用的导入和变量
@@ -42,20 +42,20 @@ repos:
                 ]
 
     - repo: https://github.com/psf/black
-      rev: "24.1.1"
+      rev: "24.3.0"
       hooks:
           - id: black
             # 自动格式化Python代码，符合PEP 8风格指南
 
     - repo: https://github.com/asottile/pyupgrade
-      rev: v3.15.0
+      rev: v3.15.2
       hooks:
           - id: pyupgrade
             # 将Python代码升级到新版本的Python语法
             args: ["--py39-plus"]
 
     - repo: https://github.com/commitizen-tools/commitizen
-      rev: v3.14.1
+      rev: v3.21.3
       hooks:
           - id: commitizen
             # 确保commit信息遵循Conventional Commits标准
